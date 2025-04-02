@@ -70,8 +70,8 @@ export const NewMovie: React.FC<Props> = ({ onAdd }) => {
         name="title"
         label="Title"
         value={title}
-        onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
-          setTitle(event.target.value);
+        onChange={(changeEvent: React.ChangeEvent<HTMLInputElement>) => {
+          setTitle(changeEvent.target.value);
           setHasTitleError(false);
         }}
         onBlur={() => setHasTitleError(!title)}
@@ -84,8 +84,8 @@ export const NewMovie: React.FC<Props> = ({ onAdd }) => {
         name="description"
         label="Description"
         value={description}
-        onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
-          setDescription(event.target.value);
+        onChange={(changeEvent: React.ChangeEvent<HTMLInputElement>) => {
+          setDescription(changeEvent.target.value);
         }}
       />
 
@@ -93,8 +93,8 @@ export const NewMovie: React.FC<Props> = ({ onAdd }) => {
         name="imgUrl"
         label="Image URL"
         value={imgUrl}
-        onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
-          setImgUrl(event.target.value);
+        onChange={(changeEvent: React.ChangeEvent<HTMLInputElement>) => {
+          setImgUrl(changeEvent.target.value);
           setHasImgUrlError(false);
         }}
         onBlur={() => setHasImgUrlError(!imgUrl)}
@@ -107,8 +107,8 @@ export const NewMovie: React.FC<Props> = ({ onAdd }) => {
         name="imdbUrl"
         label="Imdb URL"
         value={imdbUrl}
-        onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
-          setImdbUrl(event.target.value);
+        onChange={(changeEvent: React.ChangeEvent<HTMLInputElement>) => {
+          setImdbUrl(changeEvent.target.value);
           setHasImdbUrlError(false);
         }}
         onBlur={() => setHasImdbUrlError(!imdbUrl)}
@@ -121,8 +121,8 @@ export const NewMovie: React.FC<Props> = ({ onAdd }) => {
         name="imdbId"
         label="Imdb ID"
         value={imdbId}
-        onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
-          setImdbId(event.target.value);
+        onChange={(changeEvent: React.ChangeEvent<HTMLInputElement>) => {
+          setImdbId(changeEvent.target.value);
           setHasImdbIdError(false);
         }}
         onBlur={() => setHasImdbIdError(!imdbId)}
